@@ -1,0 +1,11 @@
+{
+  "name": "handballstars-admin",
+  "version": "1.0.0",
+  "description": "Web de administración de la base de datos de HandballStars",
+  "main": "/build/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario Rivero",
+  "license": "ISC"
+}
