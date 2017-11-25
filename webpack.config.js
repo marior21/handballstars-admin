@@ -12,14 +12,14 @@ module.exports = {
     entry: ['./src/index.jsx'],
     output: {
         filename: 'app.js',
-        path: '/build',
+        path: path.resolve(__dirname, 'build'),
         publicPath: '/'
     },
 
     module: {
         loaders: [
             { test: /(\.js|jsx)$/, exclude: /node_modules/, loaders: ['babel-loader'] },
-            { test: /\.css$/, loader: `style-loader!css-loader?${cssModules}` },
+            { test: /\.css$/,  loader: ExtractTextPlugin.extract({fallback:'style-loader',use: 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'}) },
             { test: /\.jpe?g|png|gif|svg$/, loader: "file-loader?name=/[name].[ext]" }
         ]
     },

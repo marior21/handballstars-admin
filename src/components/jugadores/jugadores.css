@@ -1,0 +1,9 @@
+.Contenido {
+   /* background-color: royalblue;*/
+    width: 70%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 200px; 
+}
